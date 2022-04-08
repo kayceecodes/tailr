@@ -9,10 +9,7 @@ import { increment } from '../src/store/actions/actionCreators/increment'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-  const counter: any = useSelector(
-    (state: any) => state.counter,
-    shallowEqual
-  );
+
   const dispatch: Dispatch<any> = useDispatch();  
   return (  
     <Box margin={20}>
